@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Demo the better design</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <!-- <div class="hader flex fixed">
+        <div class="left flex ">
+            <img class="img1" src="./images/better demo b logo.svg" alt="">
+            <img class="img2" src="./images/better demo titel log.svg" alt="">
+        </div>
+        <div class="right">
+            <ol class="NavLink">
+                <li>Home</li>
+                <li>Servies</li>
+                <li>Contact Us</li>
+                <li>About</li>
+            </ol>
+            <p class="btn">demo</p>
+        </div>
+    </div> -->
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <nav class="bg-gray-800 fixed w-full ">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex items-center justify-between h-16">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button type="button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <!--
+              Icon when menu is closed.
+  
+              Heroicon name: outline/menu
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <!--
+              Icon when menu is open.
+  
+              Heroicon name: outline/x
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="block lg:hidden h-8 w-auto" src="./images/better demo b logo.svg" alt="Workflow">
+                        <img class="hidden lg:block h-8 w-auto" src="./images/better demo b logo.svg" alt="Workflow">
+                    </div>
+                    <div class="hidden sm:block sm:ml-6">
+                        <div class="flex space-x-4">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                            <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                                aria-current="page">Home</a>
+
+                            <a href="#Servies"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Servies</a>
+
+                            <a href="#"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+
+                            <a href="#"
+                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact
+                                Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    <button type="button"
+                        class="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                        <span class="sr-only">View notifications</span>
+                        <!-- Heroicon name: outline/bell -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                        </svg>
+                    </button>
+
+                    <!-- Profile dropdown -->
+                    <div class="ml-3 relative">
+                        <div>
+                            <button type="button"
+                                class=" text-gray-700 py-2 px-4 bg-gray-50 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                                id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                                Join
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+
+    <div class="flashImg pt-10">
+        <img src="./images/mainSecreenImg1.svg" alt="">
+    </div>
+    <div class="w-full h-full spbg">
+        <div class="container mx-auto pb-10">
+            <h1 class="text-center text-3xl font-bold p-5 text-gray-700 ">We Are Dedicated to Help a Business Succeed.
+            </h1>
+            <p class="text-justify text-xl p-5  mx-auto font-medium text-gray-50">
+                We are a team of young creators who specialized in Logo Design, Branding, Graphic Design, Package
+                Design, and Website Design with a passion for building positive connections between brands and human
+                emotions.
+
+                We love to deliver the result the client wants. For that reason, our experienced professionals work very
+                hard and provide the end to end design services for transforming the client idea into actionable
+                solutions.</p>
+        </div>
+    </div>
+
+    </div>
+    <section id=" Servies">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold p-5 text-gray-700 text-center">OUR SERVICE</h1>
+            <p class="text-center font-medium text-lg p-3 w-1/2 mx-auto text-yellow-400 ">Better Demo offer a complete
+                range of creative services that engage and inspire at every touchpoint</p>
+            <div class="grid grid-cols-3 gap-3 p-5 w-full ">
+                <div class="bg-gray-50 rounded p-3">
+                    <img class="mx-auto" src="https://img.icons8.com/fluency/128/000000/poster.png" />
+
+                    <h1 class="text-xl font-medium text-yellow-400">Branding</h1>
+                    <p class="font-md"> We understand your brand & its emotion, after making a beautiful brand design.
+                    </p>
+                </div>
+                <div class="bg-gray-50 rounded p-3">
+                    <img class="mx-auto"
+                        src="https://img.icons8.com/fluency/128/000000/windows10-personalization.png" />
+                    <h1 class="text-xl font-medium text-yellow-400">Logo Design</h1>
+                    <p class="font-md"> We create a logo with the main motive of that perfect match for your business
+                        and goals.</p>
+                </div>
+                <div class="bg-gray-50 rounded p-3">
+                    <img class=" mx-auto" src="https://img.icons8.com/fluency/128/000000/design.png" />
+                    <h1 class="text-xl font-medium text-yellow-400">Graphic design</h1>
+                    <p class="font-md">Business card, Letterhead, Book Cover, Magazine, Brochure & Flyer/Poster design,
+                        etc…</p>
+                </div>
+                <div class="bg-gray-50 rounded p-3">
+                    <img class=" mx-auto" src="https://img.icons8.com/fluency/128/000000/web-design.png" />
+                    <h1 class="text-xl font-medium text-yellow-400">Website Design</h1>
+                    <p class="font-md">Our Design agency create a Corporate website, E-commerce site & UI/UX design</p>
+                </div>
+                <div class="bg-gray-50 rounded p-3">
+                    <img class="mx-auto" src="https://img.icons8.com/fluency/128/000000/cement-bag.png" />
+                    <h1 class="text-xl font-medium text-yellow-400">Package Design</h1>
+                    <p class="font-md">A product's packaging design decides a brand's success and
+                        movement.</p>
+                </div>
+
+                <div class="bg-gray-50 rounded p-3">
+                    <img class="mx-auto" src="https://img.icons8.com/fluency/128/000000/slide-layout.png" />
+                    <h1 class="text-xl font-medium text-yellow-400">Mockups</h1>
+                    <p class="font-md">Our Design agency also create a Mockups as user design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
